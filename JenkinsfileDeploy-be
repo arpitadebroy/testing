@@ -1,0 +1,10 @@
+@Library("javamule") _
+mulesoftPipeline {
+    scmUrl='ssh://git@bitbucket-lan.ah.nl:7999/cmm/sales-reward-papi.git'
+    scmCredentials='jenkins-ssh'
+    mavenConfigId='dae7437f-2856-489c-8ab1-5e418393ca4c'
+    serviceName='sales-reward-papi-be'
+	healthCheckUrl='/ah/merchandising/sales-reward/v2/healthcheck'
+	memoryLimit='2Gi'  
+	useDomain=false
+}
